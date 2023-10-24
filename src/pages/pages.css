@@ -1,0 +1,55 @@
+.font-link {
+    font-family: 'Roboto', bold;
+}
+
+.a {
+    font-size: 2rem;
+}
+
+body {
+    background-color: #222222;
+}
+
+.h1_text_glow {
+    color: #d5d5d5;
+    font-size: 4rem;
+    animation: glow_text 3s ease-in-out infinite alternate;
+}
+
+.h1_text {
+    color: #d5d5d5;
+    font-size: 4rem;
+}
+
+.a_text {
+    color: #d5d5d5;
+    font-size: 2rem;
+    text-align: left;
+}
+
+@keyframes glow_text {
+    from {
+        text-shadow: 0px 0px 30px #ffffff;
+    }
+
+    to{
+        text-shadow: 0px 0px 10px #838383;
+    }
+}
+
+.bajur_image {
+    margin: 2rem;
+    height: 30rem;
+    border-radius: 1rem;
+    transition: transform 0.5s, opacity 0.3s;
+}
+
+.bajur_image:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.bajur_image:not(:hover){
+    opacity: 0.9;
+}
