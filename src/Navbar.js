@@ -5,7 +5,7 @@ export default function Navbar() {
         <span className="font-link">
             <nav className="nav">
                 <Link to="/" className="site-title">
-                    Goofy Inc.
+                    АТБ Inc. 💸
                 </Link>
                 <ul>
                     <CustomLink to="/pricing">Pricing</CustomLink>
