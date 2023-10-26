@@ -7,7 +7,53 @@
 }
 
 body {
+    background: radial-gradient(rgb(61, 61, 61) 50%, rgb(50, 50, 50) 100%);
     background-color: #222222;   
+}
+
+.mainContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    gap: 3rem 3rem;
+}
+
+.containerItems{    
+    width: 20rem;
+}
+
+.ContainerHeader{
+    font-size: 3rem;
+    color: red;
+}
+
+.ContainerWithText {
+    flex: content;
+    padding: 1rem;
+    background: linear-gradient(to bottom, #8f8f8f, #5e5e5e);
+    background-color: #747474;
+    border-radius: 2rem;
+    transition: all 0.5s;
+
+}
+
+.ContainerWithText:hover {
+    transform: scale(1.1);
+    animation: containerShadow 0.5s ease-in inherit alternate;
+}
+
+.text-container {
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.containerText {
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: 'Roboto', bold;
 }
 
 .videoStyles {
@@ -34,4 +80,13 @@ body {
 .video-container {
     border-radius: 2rem;
     margin: 2rem;
+}
+
+@keyframes containerShadow {
+    from {
+        box-shadow: 0px 0px 8px #333333;
+    }
+    to {
+        box-shadow: 0px 10px 0px #000000;
+    }
 }

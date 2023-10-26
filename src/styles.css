@@ -57,11 +57,6 @@ body {
     }
 }
 
-.gradient {
-    position: absolute;
-    background: radial-gradient(rgb(61, 61, 61) 50%, rgb(50, 50, 50) 100%);
-}
-
 .container {
     margin: 1rem;
     text-align: center;
