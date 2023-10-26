@@ -1,29 +1,57 @@
 import "./pages.css"
 
-const BajurTroll = "https://cdn.discordapp.com/attachments/1041726796716056607/1163814714036457562/IMG_7874.jpg?ex=6540f1ea&is=652e7cea&hm=1d4a0d1c05d84e706c2ae7d85ae867fbb5e46476e4301994512dcb6e922734a0&"
-const BajurHappi2 = "https://media.discordapp.net/attachments/745003015676624997/1161100019978473623/IMG_7875.jpg?ex=654986a8&is=653711a8&hm=aa6e17c9b9c2fa872c4a2f9c6123ba3755c661acd7475c947ad5e5350d6582d6&=&width=440&height=585"
-const BajurHappi1 = "https://cdn.discordapp.com/attachments/745003015676624997/1161099998298124391/IMG_7876.jpg?ex=654986a3&is=653711a3&hm=1f1c96ee1f4968b611546c395ef34386226f84a345641dc54062367f4024d7fa&"
-const BajurAngryAtShark = "https://cdn.discordapp.com/attachments/745003015676624997/1161100038953504838/IMG_7880.jpg?ex=654986ad&is=653711ad&hm=afb384bc6ad495c17e6c4a85d4776ad94b24f9a80c6159c36a4f1f384f83df1f&"
-const BajurAngryAtYou = "https://cdn.discordapp.com/attachments/745003015676624997/1161100046096408576/IMG_7879.jpg?ex=654986af&is=653711af&hm=aa029801d02af649fee252e43de8f3f39ef8c8eba0640614ba93dcd9fbf93487&"
+// Cursor parking space
+      
+   
+     
+    
+    
+//
+
+const bajurPics = [
+["https://pbs.twimg.com/media/F7vQLRxbQAA_L8_?format=jpg&name=small", "Bajur Majestic"],
+["https://pbs.twimg.com/media/F7q_RdFbkAA4Ybr?format=jpg&name=small", "Bajur 'check this out'"],
+["https://pbs.twimg.com/media/F5wqSMhaIAIstfK?format=jpg&name=small", "Bajur Troll"],
+["https://pbs.twimg.com/media/F2Qj0jda8AAMEEg?format=jpg&name=small", "Bajur 'ooooooh'"],
+["https://pbs.twimg.com/media/F2Fwb8NasAAb3D-?format=jpg&name=small", "Bajur Seductive"],
+["https://pbs.twimg.com/media/F1vdMAwWAAAg-Bn?format=jpg&name=small", "Bajur Like 1"],
+["https://pbs.twimg.com/media/F1lvxOVWIAMcSE5?format=jpg&name=small", "Bajur Like 2"],
+["https://pbs.twimg.com/media/F0ZLl2pagAAAFm5?format=jpg&name=small", "Bajur 'don't like it'"],
+["https://pbs.twimg.com/media/Fz51SWHaIAAKoNO?format=jpg&name=small", "Bajur monitor seductive"],
+["https://pbs.twimg.com/media/Fw1KOK-aQAAtVQ2?format=jpg&name=small", "Bajur 'MEN'"],
+["https://pbs.twimg.com/media/FoIUnyUXgAA7DBc?format=jpg&name=small", "Bajur croc"],
+["https://pbs.twimg.com/media/FjkIZqmaUAEm-Gf?format=jpg&name=small", "Bajur protects his drink"],
+["https://pbs.twimg.com/media/FYdJH2RUUAAMh_u?format=jpg&name=small", "Bajur kills shork"],
+["https://pbs.twimg.com/media/FUl7KmSUAAAoVBF?format=jpg&name=small", "Bajur sucks on them tits"],
+["https://pbs.twimg.com/media/FJF5mYrVcAIWBHR?format=jpg&name=small", "Bajur goofy"],
+["https://pbs.twimg.com/media/FE-5sMNUcAABq-j?format=jpg&name=small", "Bajur gamer sups"],
+["https://pbs.twimg.com/media/FBH_5gWVQA0N0fq?format=jpg&name=small", "Bajur stinky pc"],
+["https://pbs.twimg.com/media/E3Pbh8qVkAcE2AF?format=jpg&name=small", "Bajur helmet"],
+["https://pbs.twimg.com/media/Ey9joaqVgAIuKr9?format=jpg&name=small", "Bajur PAIN"]
+]
+
+function generatePics() {
+    return (
+        <div>
+          {bajurPics.map((pic, index) => (
+            <img key={index} src={pic[0]} alt={pic[1]} className="bajur_image" />
+          ))}
+        </div>
+    );
+}
 
 export default function Home() {
     return (
-    <span className="font-link">
-        <div className="container">
-            <div>
-                <h1 className="h1_text_glow">Home</h1>
-            </div>
-            <div>
-                <a className="a_text">bajur shrine</a>
-            </div>
-            <div>
-                <img src={BajurTroll} alt="Bajur Troll" className="bajur_image"/>
-                <img src={BajurHappi2} alt="Bajur Happi" className="bajur_image"/>
-                <img src={BajurHappi1} alt="Bajur Happi" className="bajur_image"/>
-                <img src={BajurAngryAtShark} alt="Bajur Angry at shark" className="bajur_image"/>
-                <img src={BajurAngryAtYou} alt="Bajur Angry At You" className="bajur_image" />
-            </div>
+    <div>
+        <div>
+            <h1 className="h1_text_glow">Home</h1>
         </div>
-    </span>
+        <div>
+            <a className="a_text">bajur shrine</a>
+        </div>
+        <div>
+            {generatePics()}
+        </div>
+    </div>
     )
 }
