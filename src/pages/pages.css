@@ -8,6 +8,7 @@
 
 body {
     background: radial-gradient(rgb(61, 61, 61) 50%, rgb(50, 50, 50) 100%);
+    background-attachment: fixed;
     background-color: #222222;   
 }
 

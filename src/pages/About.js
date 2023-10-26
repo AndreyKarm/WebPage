@@ -19,7 +19,7 @@ export default function About() {
             </div>
             <div>
                 <h1 className="h1_main_text">
-                    <span className="h1_text_glow" style={{ color: '#ff0000' }}>АТБ</span>
+                    <span className="h1_text_glow" style={{ color: '#ff0000' }}>АТБ<br /></span>
                     <a className="h1_text_glow" style={{ color: '#ff0000' }}>А</a>бама - 
                     <a className="h1_text_glow" style={{ color: '#ff0000' }}>Т</a>рамп - 
                     <a className="h1_text_glow" style={{ color: '#ff0000' }}>Б</a>айден
