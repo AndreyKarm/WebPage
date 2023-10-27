@@ -13,7 +13,7 @@ export default function About() {
                 </a>
             </div>
             <div className="videoStyles">
-                <video width="30%" height="100%" controls autoPlay loop muted>
+                <video width="30%" height="100%" autoPlay loop muted>
                     <source src={videoFile} type="video/mp4" />
                 </video>
             </div>
