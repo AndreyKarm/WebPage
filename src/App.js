@@ -1,4 +1,5 @@
 import Navbar from "./Navbar"
+import Footer from "./Footer"
 import Pricing from "./pages/Pricing"
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </span>
     </>

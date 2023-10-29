@@ -16,13 +16,10 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
     align-content: stretch;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     gap: 3rem 3rem;
-}
-
-.containerItems{    
-    width: 20rem;
 }
 
 .ContainerHeader{
@@ -32,6 +29,7 @@ body {
 
 .ContainerWithText {
     flex: content;
+    max-width: 25rem;
     padding: 1rem;
     background: linear-gradient(to bottom, #8f8f8f, #5e5e5e);
     background-color: #747474;
