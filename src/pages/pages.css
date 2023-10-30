@@ -59,20 +59,20 @@ body {
     padding: 2rem;
 }
 
-.bajur_image {
+.image {
     margin: 2rem;
     height: 30rem;
     border-radius: 1rem;
     transition: transform 0.5s, opacity 0.3s;
 }
 
-.bajur_image:hover {
+.image:hover {
     transform: scale(1.1);
     opacity: 1;
 }
 
 
-.bajur_image:not(:hover){
+.image:not(:hover){
     opacity: 0.9;
 }
 
