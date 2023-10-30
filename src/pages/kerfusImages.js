@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import "./pages.css"
+import "../styles.css"
 
 const kerfuspics = [
     ["https://preview.redd.it/paczcie-kogo-ja-mam-na-18-stk%C4%99-v0-xupprbgpwssb1.jpg?width=1080&crop=smart&auto=webp&s=6e8f8a518f114e8b0ff6a888234cf3fa90609f02", "Kerfus :3"],

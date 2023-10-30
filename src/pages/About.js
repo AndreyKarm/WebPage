@@ -1,4 +1,4 @@
-import "./pages.css"
+import "../styles.css"
 import videoFile from '../firefox.mp4';
 
 export default function About() {
@@ -13,7 +13,7 @@ export default function About() {
                 </a>
             </div>
             <div className="videoStyles">
-                <video width="30%" height="100%" autoPlay loop muted>
+                <video className="video_about" autoPlay loop muted>
                     <source src={videoFile} type="video/mp4" />
                 </video>
             </div>

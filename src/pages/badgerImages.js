@@ -1,4 +1,4 @@
-import "./pages.css"
+import "../styles.css"
 
 const bajurPics = [
     ["https://pbs.twimg.com/media/F7vQLRxbQAA_L8_?format=jpg&name=large", "Bajur Majestic"],

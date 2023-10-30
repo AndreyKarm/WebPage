@@ -1,4 +1,4 @@
-import "./pages.css"
+import "../styles.css"
 import KerfusImages from './kerfusImages';
 import GeneratePicsBajur from "./badgerImages";
 
