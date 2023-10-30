@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "./pages.css"
 
 const kerfuspics = [
-    ["https://steamuserimages-a.akamaihd.net/ugc/2046376967586371434/E1BF3EB83C732C4E6F2AA58B15216FFCE5BE6535/", "O cholera"],
     ["https://preview.redd.it/paczcie-kogo-ja-mam-na-18-stk%C4%99-v0-xupprbgpwssb1.jpg?width=1080&crop=smart&auto=webp&s=6e8f8a518f114e8b0ff6a888234cf3fa90609f02", "Kerfus :3"],
     ["https://preview.redd.it/mini-kerfus-zdobyty-v0-gikw5b7mu4lb1.jpg?width=1080&crop=smart&auto=webp&s=7d45889f6a5b7b2b286d4c77d7a1c00b2cba4623", "Kerfus cube :3"],
     ["https://preview.redd.it/ive-found-a-lovely-pet-friendly-dinner-and-went-with-my-cat-v0-ik7ggkc25tra1.jpg?auto=webp&s=77c799e4f4b2bc25a54df785d2b3154479b7f40e", "Kerfus takes your order :3"],
@@ -13,23 +12,18 @@ const kerfuspics = [
 ]
 
 function KerfusImages() {
-    const [isHovered, setIsHovered] = useState(false);
 
     const playSound = () => {
-        const audio = new Audio('/test.mp3');
+        const audio = new Audio('/kerfus_meow.mp3');
         audio.play();
     };
 
     return (
-        <div
-            onMouseEnter={() => {
-                setIsHovered(true);
-                playSound();
-            }}
-            onMouseLeave={() => setIsHovered(false)}
-        >
+        <div>
             {kerfuspics.map((pic, index) => (
-                <img key={index} src={pic[0]} alt={pic[1]} className={"image"} />
+                <img key={index} src={pic[0]} alt={pic[1]} className={"image"} 
+                    onMouseEnter={() => playSound()}
+                />
             ))}
         </div>
     );

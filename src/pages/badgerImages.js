@@ -19,7 +19,8 @@ const bajurPics = [
     ["https://pbs.twimg.com/media/FE-5sMNUcAABq-j?format=jpg&name=large", "Bajur gamer sups"],
     ["https://pbs.twimg.com/media/FBH_5gWVQA0N0fq?format=jpg&name=large", "Bajur stinky pc"],
     ["https://pbs.twimg.com/media/E3Pbh8qVkAcE2AF?format=jpg&name=large", "Bajur helmet"],
-    ["https://pbs.twimg.com/media/Ey9joaqVgAIuKr9?format=jpg&name=large", "Bajur PAIN"]
+    ["https://pbs.twimg.com/media/Ey9joaqVgAIuKr9?format=jpg&name=large", "Bajur PAIN"],
+    ["https://steamuserimages-a.akamaihd.net/ugc/2046376967586371434/E1BF3EB83C732C4E6F2AA58B15216FFCE5BE6535/", "O cholera"],
 ]
 
 function GeneratePicsBajur() {
