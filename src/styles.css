@@ -261,7 +261,7 @@ body {
 .h1_main_text {
     text-align: center;
     color: #d5d5d5;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .h1_main_text_underline {
@@ -279,7 +279,6 @@ body {
 }
 
 .a_main_text {
-    display: flex;
     color: #d5d5d5;
     font-size: 2rem;
     text-align: left;
@@ -290,7 +289,6 @@ body {
 
 .container {
     margin: 1rem;
-    text-align: center;
 }
 
 .nav {

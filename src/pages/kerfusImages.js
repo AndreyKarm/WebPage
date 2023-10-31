@@ -13,7 +13,7 @@ const kerfuspics = [
 function KerfusImages() {
 
     const playSound = () => {
-        const audio = new Audio('/kerfus_meow.mp3');
+        const audio = new Audio('./kerfus_meow.mp3');
         audio.play();
     };
 
