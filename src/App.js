@@ -4,7 +4,6 @@ import Pricing from "./pages/Pricing"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import { Route, Routes } from "react-router-dom"
-import { AiFillGithub } from "react-icons/ai";
 
 function App() {
   return (
