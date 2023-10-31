@@ -4,12 +4,12 @@ export default function Navbar() {
     return (
         <span className="font-link">
             <nav className="nav">
-                <Link to="/" className="site-title">
+                <Link to="/WebPage" className="site-title">
                     BIG Money Inc. 💸
                 </Link>
                 <ul>
-                    <CustomLink to="/pricing">Pricing</CustomLink>
-                    <CustomLink to="/about">About</CustomLink>
+                    <CustomLink to="/WebPage/pricing">Pricing</CustomLink>
+                    <CustomLink to="/WebPage/about">About</CustomLink>
                 </ul>
             </nav>
         </span>
